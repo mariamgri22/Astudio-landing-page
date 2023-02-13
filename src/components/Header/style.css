@@ -1,0 +1,128 @@
+header {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  padding: 20px;
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+}
+.header-color {
+  background-color: #fff;
+  color: #00263d;
+}
+
+.header-color-blue {
+  filter: invert(100%) hue-rotate(220deg) brightness(150%) contrast(150%);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  height: 50px;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#line {
+  margin-left: 46px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.modal {
+  color: #003a5d;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.modal span {
+  width: 424px;
+  margin: 10px;
+}
+#modal-button {
+  width: 100%;
+}
+.hr {
+  border-bottom: 2px solid #003a5d;
+}
+.call-feedback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.circle {
+  background-color: #fdfdfd;
+  border-radius: 50%;
+  padding: 30px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 3px 4px rgba(0, 0, 0, 0.19);
+}
+.modal p {
+  text-align: left;
+  width: 248px;
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .logo {
+    height: 70px;
+  }
+  .contact-info {
+    margin-right: 60px;
+    text-decoration: none;
+  }
+  #line {
+    margin-left: 20px;
+    font-size: 18px;
+  }
+  .modal {
+    padding: 40px;
+  }
+  .modal span {
+    width: 524px;
+    font-size: 20px;
+  }
+  .call-feedback {
+    padding: 40px;
+  }
+  .circle {
+    padding: 50px;
+  }
+  .modal p {
+    width: 448px;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .header-container {
+    max-width: 320px;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .logo {
+    margin: 20px 0;
+  }
+  .contact-info {
+    margin-top: 20px;
+    /* margin-right: 4px; */
+    text-decoration: underline;
+  }
+  .modal {
+    max-width: 310px;
+  }
+  .modal span {
+    max-width: 200px;
+  }
+  #gr-img {
+    width: 330px;
+  }
+}

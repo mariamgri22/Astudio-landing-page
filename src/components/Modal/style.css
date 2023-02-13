@@ -1,0 +1,19 @@
+.modal-content {
+  color: #003a5d;
+  padding: 20px;
+  border-radius: 5px;
+  background: white;
+  overflow: auto;
+}
+.modal-content span {
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
+  .modal-content {
+    font-size: 14px;
+    margin: 10px;
+  }
+}

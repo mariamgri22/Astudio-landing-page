@@ -1,0 +1,118 @@
+.container {
+  background-image: url("../../assets/bitcoin.svg");
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  color: #00263d;
+  font-size: 29px;
+  font-weight: bold;
+  line-height: 38px;
+  margin-top: 80px;
+}
+.container span {
+  color: #003a5d;
+  text-align: center;
+  word-wrap: break-word;
+  width: 731px;
+}
+
+.photos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.photo {
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16);
+  margin: 20px;
+}
+.photo img {
+  border: 10px solid #fff;
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.photo-title {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  font-size: 20px;
+  transition: all 0.5s ease;
+}
+
+.photo:hover .photo-title {
+  bottom: 100px;
+  left: 200px;
+  font-size: 30px;
+}
+.photo:hover img {
+  opacity: 0.7;
+}
+.photo::after {
+  background-color: #000000;
+  opacity: 0.7;
+}
+.scroll-modal {
+  min-width: 1140px;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.scroll-modal p {
+  text-align: center;
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .title {
+    font-size: 25px;
+    line-height: 32px;
+  }
+
+  .container span {
+    width: 600px;
+  }
+
+  .photo-title {
+    font-size: 16px;
+  }
+
+  .scroll-modal {
+    min-width: 720px;
+    height: 600px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .title {
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 60px;
+  }
+
+  .container span {
+    width: 300px;
+  }
+
+  .photo {
+    width: 322px;
+  }
+  .photo img {
+    width: 100%;
+  }
+  .photo-title {
+    font-size: 14px;
+  }
+
+  .scroll-modal {
+    min-width: 320px;
+    height: 400px;
+  }
+}

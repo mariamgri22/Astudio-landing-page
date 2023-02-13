@@ -1,0 +1,23 @@
+.pr-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1600px;
+}
+.pr-container p {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  color: #003a5d;
+  padding: 10px;
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .pr-container {
+    max-width: 1024px;
+    padding: 0 20px;
+  }
+
+  .pr-container p {
+    font-size: 20px;
+  }
+}

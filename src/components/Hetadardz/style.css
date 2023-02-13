@@ -1,0 +1,213 @@
+.hetadardz-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 200px;
+}
+
+#formImg {
+  width: 880px;
+  height: 620px;
+  border-radius: 10px;
+}
+
+form {
+  padding-left: 80px;
+  padding-right: 80px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f7ff;
+  border-radius: 6px;
+  min-width: 360px;
+}
+
+.form-title {
+  margin-bottom: 20px;
+  padding-top: 20px;
+  color: #00263d;
+  width: 177px;
+}
+
+input[type="text"],
+input[type="email"] {
+  margin-bottom: 20px;
+  margin-right: 20px;
+  border: none;
+  outline-color: #476a80;
+  border-radius: 30px;
+  font-size: 16px;
+  padding: 20px;
+  min-width: 300px;
+  color: #003a5d;
+  box-shadow: 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+::placeholder {
+  color: #003a5d;
+}
+label {
+  width: 400px;
+  color: #003a5d;
+}
+input[type="checkbox"] {
+  margin: right 10px;
+  width: 20px;
+}
+
+button[type="submit"] {
+  width: 50%;
+  background-color: #00263d;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  outline: none;
+  border: none;
+}
+button[type="submit"]:hover {
+  background-color: #003a5d;
+}
+form span {
+  color: #003a5d;
+  width: 194px;
+  height: 78px;
+  opacity: 1;
+}
+form p {
+  width: 360px;
+  font-size: 30px;
+  font-weight: 500;
+  text-align: left;
+}
+form img {
+  width: 420px;
+  padding: 10px;
+  margin-top: 4px;
+}
+#logoN {
+  width: 104px;
+  height: 124px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .hetadardz-container {
+    margin-top: 100px;
+    margin-bottom: 300px;
+  }
+  .image-container {
+    position: relative;
+  }
+  #formImg {
+    width: 720px;
+    height: 480px;
+  }
+  form {
+    position: absolute;
+    margin-top: 400px;
+    padding-left: 40px;
+    padding-right: 40px;
+    min-width: 320px;
+  }
+  .form-title {
+    width: 150px;
+  }
+  input[type="text"],
+  input[type="email"] {
+    min-width: 260px;
+    padding-left: 30px;
+    padding-right: 200px;
+  }
+  label {
+    width: 350px;
+  }
+  button[type="submit"] {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .hetadardz-container {
+    margin-top: 50px;
+  }
+  #formImg {
+    width: 550px;
+    height: 350px;
+  }
+  form {
+    padding-left: 20px;
+    padding-right: 20px;
+    min-width: 260px;
+  }
+  .form-title {
+    width: 130px;
+  }
+  input[type="text"],
+  input[type="email"] {
+    min-width: 220px;
+    padding-left: 20px;
+    padding-right: 150px;
+  }
+  label {
+    width: 300px;
+  }
+  button[type="submit"] {
+    width: 80%;
+  }
+  form span {
+    width: 150px;
+  }
+  form p {
+    width: 260px;
+    font-size: 20px;
+  }
+  form img {
+    width: 320px;
+  }
+  #logoN {
+    width: 84px;
+    height: 104px;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .hetadardz-container {
+    margin-top: 30px;
+  }
+  #formImg {
+    width: 400px;
+    height: 250px;
+  }
+  form {
+    padding-left: 10px;
+    padding-right: 10px;
+    min-width: 200px;
+  }
+  .form-title {
+    width: 100px;
+  }
+  input[type="text"],
+  input[type="email"] {
+    min-width: 180px;
+    padding-left: 10px;
+    padding-right: 100px;
+  }
+  label {
+    width: 250px;
+  }
+  button[type="submit"] {
+    width: 90%;
+  }
+  form span {
+    width: 100px;
+  }
+  form p {
+    width: 200px;
+    font-size: 16px;
+  }
+  form img {
+    width: 250px;
+  }
+  #logoN {
+    width: 64px;
+    height: 84px;
+  }
+}

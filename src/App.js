@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Home from "./components/Home";
+import Nermucum from "./components/Nermucum";
+import Hetadardz from "./components/Hetadardz";
+import WhoAreWe from "./components/WhoAreWe";
+import News from "./components/News";
+import Description from "./components/Description";
+import Map from "./components/Map";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Home />
+      <Nermucum />
+      <Hetadardz />
+      <WhoAreWe />
+      <News />
+      <Description />
+      <Map />
+      <Footer />
     </div>
   );
 }

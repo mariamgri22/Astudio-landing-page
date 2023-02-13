@@ -1,0 +1,111 @@
+.card-container {
+  background-image: url("../../assets/bitcoin_who.svg");
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  width: 334px;
+  background-color: #fff;
+  border-radius: 5px;
+  border-color: #eee;
+  box-shadow: 0px 0px 10px #ccc;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s, box-shadow 1s;
+}
+.card:hover {
+  transform: scale(1.02) perspective(0px);
+  box-shadow: 0px 3px 3px rgba(0, 58, 93, 0.16);
+}
+
+.icon-circle {
+  width: 66px;
+  height: 66px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  box-shadow: 0px 3px 3px rgba(0, 58, 93, 0.15);
+}
+
+.icon-circle img {
+  margin: 12px;
+}
+
+.wh-title {
+  font-size: 19px;
+  font-weight: bold;
+  color: #00263d;
+  width: 360px;
+  text-align: center;
+  text-shadow: 0px 3px 1.5px rgba(154, 154, 154, 0.16);
+}
+
+.description {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  color: #003a5d;
+  width: 232px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .card-container {
+    background-size: cover;
+  }
+  .cards {
+    flex-wrap: nowrap;
+  }
+
+  .card {
+    margin-bottom: 40px;
+  }
+
+  .wh-title {
+    width: 80%;
+  }
+
+  .description {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 667px) {
+  .card {
+    width: 60%;
+    padding: 10px;
+  }
+
+  .icon-circle {
+    width: 50px;
+    height: 50px;
+  }
+
+  .wh-title {
+    font-size: 16px;
+    width: 90%;
+  }
+
+  .description {
+    font-size: 14px;
+    width: 90%;
+  }
+}
