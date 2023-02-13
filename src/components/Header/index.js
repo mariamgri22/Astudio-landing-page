@@ -10,8 +10,6 @@ export default function Header() {
   const [headerSvgClass, setHeaderSvgClass] = useState("");
   const [isOpen, setIsOpen] = useState(false);
   const [submit, setSubmit] = useState(false);
-;
-  
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
